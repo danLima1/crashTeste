@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recreated UI</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .bet-container {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 300px;
+        }
+
+        .toggle-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .toggle-button {
+            background-color: #444;
+            color: #bbb;
+            border: none;
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .toggle-button.active {
+            background-color: #1e1e1e;
+            color: #fff;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="bet-container">
+        <div class="toggle-container">
+            <button class="toggle-button active">Aposta</button>
+            <button class="toggle-button">Auto</button>
+        </div>
+        <div class="bet-box">
+            <button>-</button>
+            <input type="text" value="1.00" readonly>
+            <button>+</button>
+        </div>
+        <div class="bet-options">
+            <button class="active">1</button>
+            <button>2</button>
+            <button>5</button>
+            <button>10</button>
+        </div>
+        <div class="bet-action">APOSTA 1.00 USD</div>
+    </div>
+</body>
+</html>

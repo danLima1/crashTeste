@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviator</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div id="header">
+        <div id="last-counters"></div>
+        <div>
+            <div id="balance">BALANCE: </div>
+            <div id="balance-amount">
+                <div style="position: absolute; top: 5px; right: 10px; font-size: 19px; color: #ffffff;">€</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="counterWrapper">
+        <div id="bg-image"></div>
+        <canvas id="canvas"></canvas>
+        <div id="counter">1.00</div>
+    </div>
+
+    <div id="bottom-wrapper">
+        <div class="bet-container">
+            <div class="toggle-container">
+                <button class="toggle-button active">Aposta</button>
+                <button class="toggle-button">Auto</button>
+            </div>
+            <div class="bet-box">
+                <button class="bet-minus">-</button>
+                <input type="text" id="bet-input" value="1.00" readonly>
+                <button class="bet-plus">+</button>
+            </div>
+            <div class="bet-options">
+                <button class="bet-option active">1</button>
+                <button class="bet-option">2</button>
+                <button class="bet-option">5</button>
+                <button class="bet-option">10</button>
+            </div>
+            <button id="bet-button" class="bet-action">APOSTA 1.00 USD</button>
+            
+        </div>
+    </div>
+
+    <div id="message-button">
+        <p id="message"></p>
+    </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
